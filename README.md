@@ -17,7 +17,9 @@ Det gør det muligt at teste flere inputkombinationer uden at skrive flere testf
 ## 3. *Fixture AB tests, igen med edge cases*
 ### Kode
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fa21dec8-4953-4cbb-8018-a608a9b1351d" />
+
 ### (samme) Output
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/cb988bd5-08b6-40fa-bf75-63d628584338" />
+
 #### Forklaring
 Med @pytest.fixture(params=AB_CASES) bliver fixture ab kørt en gang pr. element i AB_CASES, og den aktuelle værdi kan hentes som request.param (fx (3, 2)). Hver test der tager ab som argument (def test_x(ab): ...) udføres derfor automatisk for alle cases, hvor a, b = ab giver input til beregningen.
