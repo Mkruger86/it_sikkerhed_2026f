@@ -6,8 +6,10 @@
 ## 2. *Parametrized AB tests med low/high edge cases*
 ### Kode
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e721f3ca-8f9b-418e-a4d8-e260980d22c6" />
+
 ### Output
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/a3890ec6-e5d3-4ca8-915f-8272fbba548a" />
+
 #### Forklaring
 Med @pytest.mark.parametrize("a,b", AB_CASES) kører pytest den samme testfunktion flere gange, en gang pr. case, og tildeler værdierne til a og b i hvert run. 
 Det gør det muligt at teste flere inputkombinationer uden at skrive flere testfunktioner; hver case bliver en separat testrun (med eget id og evt. xfail).
