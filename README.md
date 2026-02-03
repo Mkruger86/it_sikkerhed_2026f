@@ -12,7 +12,7 @@
 Med @pytest.mark.parametrize("a,b", AB_CASES) kører pytest den samme testfunktion flere gange, en gang pr. case, og tildeler værdierne til a og b i hvert run. 
 Det gør det muligt at teste flere inputkombinationer uden at skrive flere testfunktioner; hver case bliver en separat testrun (med eget id og evt. xfail).
 
-## 3. *Fixture AB tests, igen med edge cases
+## 3. *Fixture AB tests, igen med edge cases*
 ### Kode
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fa21dec8-4953-4cbb-8018-a608a9b1351d" />
 ### (samme) Output
