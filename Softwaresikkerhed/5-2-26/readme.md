@@ -70,6 +70,12 @@ Politik: fail-closed + enkel allow-list/format.
 | EC-I7 | sum != 12 | ValueError |
 | EC-I8 | valid men ikke major/minor | OK → mode=UNKNOWN |
 
+### **2.4. Info** 
+*Inputs til “skala-definition” er opdelt i klasser for `intervals` og for RBAC.  
+For `intervals` er der klasser som: korrekt list[int] med 7 elementer, forkert type, forkert længde, værdier udenfor {1,2}, og sum≠12.  
+For RBAC er der klasser baseret på rolle×operation: AUTHORITY på C/U/D vs LEARNER på C/U/D, samt READ/LIST for begge.  
+Hver klasse får 1–2 repræsentative testcases, således kataloget ikke kan få “halvgyldige” skalaer og rollerne håndhæves konsekvent.*
+
 ---
 
 ## **3. Grænseværditest**
@@ -102,6 +108,8 @@ Politik: fail-closed + enkel allow-list/format.
 | BV-N2 | "A" | OK |
 | BV-N3 | 40 tegn | OK |
 | BV-N4 | 41 tegn | ValueError |
+
+**2.4. Info** 
 
 ---
 
