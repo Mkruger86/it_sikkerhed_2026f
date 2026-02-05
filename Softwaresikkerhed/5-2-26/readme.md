@@ -1,4 +1,4 @@
-# **Secure Scale Catalog (RBAC) + Scale Classification (Intervals)
+# **Secure Scale Catalog (RBAC) + Scale Classification (Intervals)**
 
 Systemet er et “katalog over skalaer”, hvor en **myndighed** vedligeholder skala-definitioner (CRUD), mens en **elev** kun kan læse (Read/List).
 
