@@ -1,4 +1,0 @@
-- Iso 27001
-- Iso 25010
-- Snyde systemer med floating point precision
-- Decision table test
