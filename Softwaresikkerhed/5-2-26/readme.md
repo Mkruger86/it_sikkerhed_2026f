@@ -155,7 +155,7 @@ Handling:
 
 ---
 
-## **5. CRUD(L) testcases (praktisk, security-oriented)**
+## **5. CRUD(L) testcases**
 
 Entity: `ScaleDefinition { id, name, intervals, mode }`
 
@@ -174,7 +174,7 @@ Entity: `ScaleDefinition { id, name, intervals, mode }`
 
 ---
 
-## **6. Cycle process test (livscyklus)**
+## **6. Cycle process test**
 Cycle: Create → Read → Update → Read → Delete → Read
 
 | Step | Operation | Rolle | Forventning |
@@ -188,7 +188,7 @@ Cycle: Create → Read → Update → Read → Delete → Read
 
 ---
 
-## **7. Testpyramiden (hvad testes hvor)**
+## **7. Testpyramiden**
 | Lag | Fokus | Eksempler |
 |---|---|---|
 | Unit (flest) | inputvalidering + klassifikation | DT-B + grænse/ækvivalens |
